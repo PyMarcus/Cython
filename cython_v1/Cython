@@ -6,7 +6,7 @@ Python normalmente é lento, devido ao GIO, mas, devido a sua forma modular,pode
 -pip install cython
 
 * o código é transformado em linguagem C e compilado para linguagem de máquina
-
+* USADO PARA PARTES LENTAS DO CÓDIGO
 Para compilar:
 
 1)Cria setup.py:
