@@ -1,0 +1,25 @@
+"""
+-principal implementacao do python, escrito em C.
+-Grande parte das bibliotecas python são escritas em C.
+Python normalmente é lento, devido ao GIO, mas, devido a sua forma modular,pode-se evitar isso
+-Cython é um compilador estático otimizado para a linguagem python, o que torna a escrita de extensoes C para python simples
+-pip install cython
+
+* o código é transformado em linguagem C e compilado para linguagem de máquina
+
+Para compilar:
+
+1)Cria setup.py:
+from distutils.core import setup
+from Cython.Build import cythonize
+
+# faz a compilação do módulo cython
+setup(
+    ext_modules=cythonize(['Introduction.pyx'])
+)
+
+
+2) compila:
+ python .\setup.py build_ext --inplace
+
+"""
