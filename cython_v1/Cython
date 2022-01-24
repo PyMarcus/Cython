@@ -8,7 +8,6 @@ Python normalmente é lento, devido ao GIO, mas, devido a sua forma modular,pode
 * o código é transformado em linguagem C e compilado para linguagem de máquina
 * USADO PARA PARTES LENTAS DO CÓDIGO
 Para compilar:
-    with nogil:  # no gil , pois, diz que se quer trabalhar com C ao compilador
 
 1)Cria setup.py:
 from distutils.core import setup
@@ -18,7 +17,7 @@ from Cython.Build import cythonize
 setup(
     ext_modules=cythonize(['Introduction.pyx'])
 )
-
+d
 
 2) compila:
  python .\setup.py build_ext --inplace
